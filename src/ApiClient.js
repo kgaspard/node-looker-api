@@ -63,6 +63,10 @@
     this.basePath = this._basePath.replace('INSTANCE_NAME',name);
   }
 
+  exports.prototype.setPort = function(port) {
+    this.basePath = this._basePath.replace('19999',port);
+  }
+
   /**
    * Returns a string representation for an actual parameter.
    * @param param The actual parameter.
